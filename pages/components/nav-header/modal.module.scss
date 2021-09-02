@@ -1,0 +1,25 @@
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-dark);
+  padding-bottom: 32px;
+  height: 100vh;
+  overflow-y: auto;
+  transition: 0.2s cubic-bezier(1, 0.38, 0.35, 0.62);
+  width: 80vw;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.aberto {
+  display: flex;
+}

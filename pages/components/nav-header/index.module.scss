@@ -1,0 +1,36 @@
+.header {
+  background-color: var(--light);
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.logo {
+  outline: 0;
+  &:hover,
+  &:focus {
+    position: relative;
+    opacity: 0.9;
+    top: -2px;
+  }
+  img {
+    height: 64px;
+  }
+}
+
+.botaoHamburger {
+  display: none;
+  @media screen and (max-width: 1200px) {
+    display: flex;
+  }
+}
+
+.botaoFechar {
+  background-color: red;
+}
