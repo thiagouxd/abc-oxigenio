@@ -15,20 +15,16 @@ export default Menu
 
 const menuItem = [
   {
-    label: "Sobre nós",
-    link: "#sobre"
+    label: "Home",
+    link: "/"
   },
   {
     label: "Gases hospitalares",
-    link: "#hospitalares"
+    link: "#produtos"
   },
   {
-    label: "Gases industriais",
-    link: "#industriais"
-  },
-  {
-    label: "Concentradores",
-    link: "#concentradores"
+    label: "Sobre",
+    link: "#sobre"
   },
   {
     label: "Contato",
