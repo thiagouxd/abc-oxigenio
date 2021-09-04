@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  padding: 0 24px;
+}
+
+.image {
+  object-fit: cover;
+  min-height: 280px;
+}
+
+.title {
+  text-align: center;
+  width: 100%;
+  color: var(--primary-dark);
+  text-transform: uppercase;
+  margin-top: 48px;
+  margin-bottom: 0;
+}
+
+.paragraphy {
+  color: var(--gray-700);
+  text-align: center;
+  font-style: 14px;
+  line-height: 28px;
+}
