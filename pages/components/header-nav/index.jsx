@@ -1,10 +1,11 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import Menu from "./menu"
 import Modal from "./modal"
 import style from "./index.module.scss"
 
 const NavHeader = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const [isScrolling, setIsScrolling] = useState(false)
 
   const close = () => {
     setIsOpen(false)
@@ -14,8 +15,14 @@ const NavHeader = () => {
     setIsOpen(true)
   }
 
+  useEffect(() => {
+    document.addEventListener("scroll", () => {
+      window.pageYOffset === 0 ? setIsScrolling(false) : setIsScrolling(true)
+    })
+  })
+
   return (
-    <header className={style.header}>
+    <header className={`${style.header} ${isScrolling && style.headerScrollMode}`}>
       <nav className={style.nav}>
         <a className={style.logo} href="#home">
           <img src="logo.svg" />

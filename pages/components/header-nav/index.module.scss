@@ -5,6 +5,18 @@
   z-index: 3;
 }
 
+.headerScrollMode {
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.10);
+  .nav {
+    padding: 16px 24px;
+  }
+  .logo {
+    img {
+      height: 48px;
+    }
+  }
+}
+
 .nav {
   display: flex;
   width: 100%;
@@ -12,6 +24,7 @@
   margin: 0 auto;
   justify-content: space-between;
   padding: 24px;
+  transition: padding 0.5s ease;
 }
 
 .logo {
@@ -23,6 +36,7 @@
   }
   img {
     height: 64px;
+    transition: height 0.5s ease;
   }
 }
 
