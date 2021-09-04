@@ -4,8 +4,18 @@ import style from "./index.module.scss"
 const HomeBanner = () => {
   return (
     <div className={style.banner}>
-      banner home
-      <button className={style.button}>PP</button>
+      <h1 className={style.title}>
+        <span>
+          <strong>Oxigênio para sua clínica?</strong>
+          Entregamos em todo o estado.
+        </span>
+      </h1>
+      <div className={style.containerText}></div>
+      <img className={style.image} src="banner1.png" />
+
+      <a className={style.button}>
+        <img src="logo-whats.svg" />
+      </a>
     </div>
   )
 }

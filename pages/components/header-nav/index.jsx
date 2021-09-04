@@ -17,7 +17,7 @@ const NavHeader = () => {
   return (
     <header className={style.header}>
       <nav className={style.nav}>
-        <a className={style.logo} href="#">
+        <a className={style.logo} href="#home">
           <img src="logo.svg" />
         </a>
 

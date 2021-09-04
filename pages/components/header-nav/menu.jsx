@@ -16,7 +16,7 @@ export default Menu
 const menuItem = [
   {
     label: "Home",
-    link: "/"
+    link: "#home"
   },
   {
     label: "Gases hospitalares",
