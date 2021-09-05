@@ -20,7 +20,7 @@ const NavHeader = () => {
     document.addEventListener("scroll", () => {
       window.pageYOffset === 0 ? setIsScrolling(false) : setIsScrolling(true)
     })
-  })
+  }, [])
 
   return (
     <header className={`${style.header} ${isScrolling && style.headerScrollMode}`}>

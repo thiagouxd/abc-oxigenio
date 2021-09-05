@@ -10,13 +10,13 @@ const phone = "(67) 99982-5971"
 const Contact = () => {
   return (
     <section className={style.container} id="contato">
-      <a className={style.button} target="_blank"
+      <a className={style.button} target="_blank" rel="noopener noreferrer"
         href={`https://api.whatsapp.com/send?phone=${phone}`}>
         <img src="logo-whats-color.svg" />
         {phone}
       </a>
 
-      <a href={mapLink} target="_blank" className={style.address}>
+      <a href={mapLink} target="_blank" rel="noopener noreferrer" className={style.address}>
         Av. Guacurus, 1097 - Jardim Itamaraca, Campo Grande / MS, 79062-292
       </a>
 

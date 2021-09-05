@@ -32,7 +32,7 @@ const Products = () => {
     const element = document.getElementById("product-list");
 
     setProductList(element)
-  })
+  }, [])
 
 
   const scrollRight = () => {
