@@ -6,7 +6,7 @@
 }
 
 .headerScrollMode {
-  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
   .nav {
     padding: 16px 24px;
   }
@@ -40,13 +40,34 @@
   }
 }
 
-.botaoHamburger {
+.hamburgerButton {
   display: none;
-  @media screen and (max-width: var(--max-width)) {
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  outline: 0;
+  border: 0;
+  background-color: var(--light);
+  color: var(--primary);
+  cursor: pointer;
+  border-radius: 50%;
+  &:hover,
+  &:focus {
+    background-color: var(--primary);
+    color: var(--light);
+  }
+  &:active {
+    background-color: var(--primary-light);
+  }
+  @media screen and (max-width: 800px) {
     display: flex;
   }
 }
 
-.botaoFechar {
-  background-color: red;
+.closeButton {
+  @extend .hamburgerButton;
+  position: absolute;
+  right: 24px;
+  top: 24px;
 }

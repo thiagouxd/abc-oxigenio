@@ -5,15 +5,15 @@ const map = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14947.17695764
 
 const mapLink = "https://www.google.com/maps/place/ABC+Oxig%C3%AAnio/@-20.514659,-54.566912,15z/data=!4m5!3m4!1s0x0:0xa628a00ab3cc37a2!8m2!3d-20.5146241!4d-54.566923?hl=pt-BR"
 
-const tel = "(67) 99982-5971"
+const phone = "(67) 99982-5971"
 
 const Contact = () => {
   return (
     <section className={style.container} id="contato">
       <a className={style.button} target="_blank"
-        href={`https://api.whatsapp.com/send?phone=${tel}`}>
+        href={`https://api.whatsapp.com/send?phone=${phone}`}>
         <img src="logo-whats.svg" />
-        {tel}
+        {phone}
       </a>
 
       <a href={mapLink} target="_blank" className={style.address}>

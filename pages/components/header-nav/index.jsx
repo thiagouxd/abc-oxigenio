@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import Menu from "./menu"
 import Modal from "./modal"
 import style from "./index.module.scss"
+import { Menu as MenuIcon, X } from "react-feather"
 
 const NavHeader = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -30,14 +31,17 @@ const NavHeader = () => {
 
         <Menu />
 
-        <button className={style.botaoHamburger} onClick={open}>=</button>
+        <button className={style.hamburgerButton} onClick={open}>
+          <MenuIcon />
+        </button>
 
         <Modal setIsOpen={setIsOpen} isOpen={isOpen}>
           <Menu isOpen={isOpen} />
-          <button className={style.botaoFechar} onClick={close}>X</button>
+          <button className={style.closeButton} onClick={close}>
+            <X />
+          </button>
         </Modal>
       </nav>
-
     </header >
   )
 }

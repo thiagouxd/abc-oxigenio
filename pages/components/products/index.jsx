@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./index.module.scss"
 
-const lista = [
+const products = [
   { title: "kit Oxigênio", img: "imagem" },
   { title: "kit Oxigênio", img: "imagem" },
   { title: "kit Oxigênio", img: "imagem" },
@@ -16,15 +16,15 @@ const Products = () => {
       <h2 className={style.title}>Gases medicinais</h2>
       <hr className={style.divider} />
       <ul>
-        {lista.map((item, index) => <Item item={item} index={index} />)}
+        {products.map((item, index) => <Item key={index} item={item} />)}
       </ul>
     </section>
   )
 }
 
-const Item = ({ item, index }) => {
+const Item = ({ item }) => {
   return (
-    <li key={index}>
+    <li>
       {item.title}
     </li>
   )

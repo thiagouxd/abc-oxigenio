@@ -1,5 +1,7 @@
-import React from "react";
+import React from "react"
 import style from "./index.module.scss"
+
+const phone = "(67) 99982-5971"
 
 const HomeBanner = () => {
   return (
@@ -13,7 +15,9 @@ const HomeBanner = () => {
       <div className={style.containerText}></div>
       <img className={style.image} src="banner1.png" />
 
-      <a className={style.button}>
+      <a target="_blank"
+        href={`https://api.whatsapp.com/send?phone=${phone}`}
+        className={style.button}>
         <img src="logo-whats.svg" />
       </a>
     </div>
