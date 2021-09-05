@@ -12,7 +12,7 @@ const Contact = () => {
     <section className={style.container} id="contato">
       <a className={style.button} target="_blank"
         href={`https://api.whatsapp.com/send?phone=${phone}`}>
-        <img src="logo-whats.svg" />
+        <img src="logo-whats-color.svg" />
         {phone}
       </a>
 

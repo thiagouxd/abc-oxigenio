@@ -40,12 +40,13 @@
 }
 
 .title {
+  font-family: Rajdhani;
   position: absolute;
   width: 400px;
   height: 300px;
   top: 64px;
   left: 32px;
-  padding: 0 40px;
+  padding: 0 44px;
   color: var(--light);
   z-index: 1;
   display: flex;
@@ -56,13 +57,18 @@
   text-align: center;
   font-weight: 300;
   font-style: italic;
-  font-size: 40px;
+  font-size: 44px;
   line-height: 40px;
   letter-spacing: -2px;
   margin: 0;
   animation: text 1s cubic-bezier(0.7, 0.06, 0.5, 1.19);
   span {
     transform: rotate(-2deg);
+  }
+  @media screen and (max-width: 800px) {
+    font-size: 40px;
+    padding: 0 40px;
+    width: 280px;
   }
 }
 
@@ -79,6 +85,9 @@
   background-color: var(--primary);
   mix-blend-mode: multiply;
   animation: text 1s cubic-bezier(0.7, 0.06, 0.5, 1.19);
+  @media screen and (max-width: 800px) {
+    width: 280px;
+  }
 }
 
 .image {

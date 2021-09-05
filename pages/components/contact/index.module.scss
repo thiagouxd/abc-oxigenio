@@ -5,12 +5,14 @@
 }
 
 .button {
+  font-family: Rajdhani;
+  font-weight: 700;
   display: flex;
-  padding: 0 32px 4px 32px;
+  padding: 0 32px;
   justify-content: center;
   align-items: center;
   height: 80px;
-  font-size: 32px;
+  font-size: 40px;
   background-color: var(--primary-dark);
   color: var(--light);
   border-radius: 56px;
@@ -24,6 +26,11 @@
   img {
     height: 70%;
     margin-right: 16px;
+  }
+  @media screen and (max-width: 800px) {
+    font-size: 32px;
+    padding: 0 16px;
+    height: 56px;
   }
 }
 

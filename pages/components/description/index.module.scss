@@ -9,13 +9,16 @@
 .image {
   object-fit: cover;
   min-height: 280px;
+  @media screen and (max-width: 800px) {
+    height: 280px;
+  }
 }
 
 .title {
   text-align: center;
   width: 100%;
+  font-size: 32px;
   color: var(--primary-dark);
-  text-transform: uppercase;
   margin-top: 48px;
   margin-bottom: 0;
 }
