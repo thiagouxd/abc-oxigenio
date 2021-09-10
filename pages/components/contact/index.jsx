@@ -17,7 +17,7 @@ const Contact = () => {
       </a>
 
       <a href={mapLink} target="_blank" rel="noopener noreferrer" className={style.address}>
-        Av. Guacurus, 1097 - Jardim Itamaraca, Campo Grande / MS, 79062-292
+        Av. Guaicurus, 1097 - Jardim Itamaraca, Campo Grande / MS, 79062-292
       </a>
 
       <iframe src={map}
