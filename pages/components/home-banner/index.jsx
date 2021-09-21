@@ -1,9 +1,7 @@
 import React from "react"
 import style from "./index.module.scss"
 
-const phone = "(67) 99982-5971"
-
-const HomeBanner = () => {
+const HomeBanner = ({ phone }) => {
   return (
     <div className={style.banner}>
       <h1 className={style.title}>

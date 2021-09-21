@@ -3,21 +3,16 @@ import { ChevronLeft, ChevronRight } from "react-feather";
 import style from "./index.module.scss"
 
 const products = [
-  { name: "Kit Oxigênio", img: "gases.png" },
-  { name: "Kit Oxigênio", img: "gases.png" },
-  { name: "Kit Oxigênio", img: "gases.png" },
-  { name: "Kit Oxigênio", img: "gases.png" },
-  { name: "Kit Oxigênio", img: "gases.png" },
-  { name: "Kit Oxigênio", img: "gases.png" },
-  { name: "Kit Oxigênio", img: "gases.png" },
-  { name: "Kit Oxigênio", img: "gases.png" },
-  { name: "Kit Oxigênio", img: "gases.png" },
-  { name: "Kit Oxigênio", img: "gases.png" },
-  { name: "Kit Oxigênio", img: "gases.png" },
-  { name: "Kit Oxigênio", img: "gases.png" },
+  { name: "Argônio", img: "produtos/argonio.jpg" },
+  { name: "Acetileno", img: "produtos/acetileno.jpg" },
+  { name: "Dióxido de Carbono", img: "produtos/dióxido-de-carbono.jpg" },
+  { name: "Hélio", img: "produtos/hélio.jpg" },
+  { name: "Hidrogênio", img: "produtos/hidrogênio.jpg" },
+  { name: "Nitrogênio", img: "produtos/nitrogênio.jpg" },
+  { name: "Oxigênio", img: "produtos/oxigênio.jpg" },
+  { name: "Regulador Medicinal", img: "produtos/regulador.jpg" },
 ]
 
-const phone = '(67) 989898989'
 const text = (produto) => `
   Olá! Vim por meio do Site.
   O produto é o ${produto}
@@ -25,12 +20,11 @@ const text = (produto) => `
 
 const valueToScroll = 344
 
-const Products = () => {
+const Products = ({ phone }) => {
   const [productList, setProductList] = useState()
 
   useEffect(() => {
     const element = document.getElementById("product-list");
-
     setProductList(element)
   }, [])
 
@@ -61,14 +55,14 @@ const Products = () => {
         </button>
 
         <ul id="product-list" className={style.productList}>
-          {products.map((item, index) => <Item key={index} item={item} />)}
+          {products.map((item, index) => <Item phone={phone} key={index} item={item} />)}
         </ul>
       </div>
     </section>
   )
 }
 
-const Item = ({ item }) => {
+const Item = ({ item, phone }) => {
   return (
     <li className={style.product}>
       <div className={style.imageContainer}>

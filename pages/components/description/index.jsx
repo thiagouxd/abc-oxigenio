@@ -1,26 +1,23 @@
 import React, { useState } from "react";
 import style from "./index.module.scss"
 
-const text = `
-There are many variations of passages of Lorem Ipsum available, but the majority have suffered 
-alteration in some form, by injected humour, or randomised words which don't look even slightly 
-believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
- embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to 
- repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a 
- dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate 
- Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from 
- repetition, injected humour, or non-characteristic words etc.
-`
+const text = <>
+  Há 22 anos no mercado, referência quando o assunto é comercialização de gases medicinais e industriais, pela qualidade, e acima de tudo, segurança na manipulação dos produtos.
+  <br />
+  <br />
+  A ABC Oxigênio trabalha com gases já envasados como óxido nitroso, acetileno, hélio, nitrogênio, mistura para solda, argônio, ar comprimido medicinal, ar sintético, além de oferecer tanques criogênicos de gases para o envase dos gases oxigênio e dióxido de carbono.
+  <br />
+  <br />
+  Os cilindros de oxigênio são envasados e analisados por equipamentos aprovados pela Anvisa (Agência Nacional de Vigilância Sanitária) bem como todo o processo de transformação do oxigênio medicinal líquido em gasoso é acompanhado, analisado e conferido por profissional farmacêutico, oferecendo qualidade e confiança do produto.
+</>
 
 const Description = () => {
-  const [descriptionText, setDescriptionText] = useState(text)
-
   return (
     <section className={style.container} id="sobre">
       <img className={style.image} src="banner.png" />
 
       <h2 className={style.title}>Oxigênio é vida</h2>
-      <p className={style.paragraphy}>{descriptionText}</p>
+      <p className={style.paragraphy}>{text}</p>
     </section>
   )
 }

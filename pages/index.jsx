@@ -4,19 +4,21 @@ import NavHeader from "./components/header-nav"
 import BannerHome from "./components/home-banner"
 import Products from "./components/products"
 
+const contactPhone = '(67) 98989-8989'
+
 export default function Home() {
   return (
     <>
       <NavHeader />
 
       <main>
-        <BannerHome />
-        <Products />
+        <BannerHome phone={contactPhone} />
+        <Products phone={contactPhone} />
         <Description />
       </main>
 
       <footer>
-        <Contact />
+        <Contact phone={contactPhone} />
       </footer>
     </>
   )
