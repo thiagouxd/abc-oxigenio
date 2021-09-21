@@ -15,8 +15,8 @@ const products = [
 ]
 
 const text = (produto) => `
-  Olá! Vim por meio do Site.
-  O produto é o ${produto}
+  Olá! Vim por meio do seu site.
+  O produto que estou interessado é o ${produto}
 `
 
 const valueToScroll = 344
