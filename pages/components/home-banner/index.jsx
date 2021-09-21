@@ -14,7 +14,7 @@ const HomeBanner = ({ phone }) => {
       <img className={style.image} src="banner1.png" />
 
       <a target="_blank" rel="noopener noreferrer"
-        href={`https://api.whatsapp.com/send?phone=${phone}`}
+        href={`https://api.whatsapp.com/send?phone=+55${phone}`}
         className={style.button}>
         <img src="logo-whats.svg" />
       </a>

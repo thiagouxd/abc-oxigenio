@@ -72,7 +72,7 @@ const Item = ({ item, phone }) => {
 
       <div className={style.textContainer}>
         <h3 className={style.productName}>{item.name}</h3>
-        <a href={`https://api.whatsapp.com/send?phone=${phone}&text=${text(item.name)}`}
+        <a href={`https://api.whatsapp.com/send?phone=+55${phone}&text=${text(item.name)}`}
           className={style.buyButton}>
           Comprar agora
         </a>
