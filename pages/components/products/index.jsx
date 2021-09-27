@@ -3,14 +3,14 @@ import style from "./index.module.scss"
 
 const products = [
   { name: "Kit Oxigênio", img: "produtos/kit-oxigenio.jpg" },
-  { name: "Oxigênio", img: "produtos/oxigênio.jpg" },
-  { name: "Hidrogênio", img: "produtos/hidrogênio.jpg" },
-  { name: "Nitrogênio", img: "produtos/nitrogênio.jpg" },
+  { name: "Oxigênio", img: "produtos/oxigenio.jpg" },
+  { name: "Hidrogênio", img: "produtos/hidrogenio.jpg" },
+  { name: "Nitrogênio", img: "produtos/nitrogenio.jpg" },
   { name: "Argônio", img: "produtos/argonio.jpg" },
   { name: "Hélio", img: "produtos/hélio.jpg" },
   { name: "Canetas para solda", img: "produtos/canetasparaSOLDA.jpg" },
   { name: "Acetileno", img: "produtos/acetileno.jpg" },
-  { name: "Dióxido de Carbono", img: "produtos/dióxido-de-carbono.jpg" },
+  { name: "Dióxido de Carbono", img: "produtos/dioxido_de_carbono.jpg" },
   { name: "Concentrador de oxigênio", img: "produtos/concentrador.jpg" },
   { name: "Regulador Medicinal", img: "produtos/regulador.jpg" },
 ]
