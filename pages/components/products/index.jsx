@@ -41,7 +41,7 @@ const Products = ({ phone }) => {
 
   return (
     <section className={style.container} id="produtos">
-      <h2 className={style.title}>Produtos</h2>
+      <h2 className={style.title}>Gases Medicinais e Industriais</h2>
       <hr className={style.divider} />
 
       <div className={style.containerList}>
