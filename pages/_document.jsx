@@ -17,6 +17,7 @@ class MyDocument extends Document {
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Rajdhani:wght@400;700&display=swap" rel="stylesheet" />
           <link rel="icon" href="/favicon.ico" />
           <meta charset="utf-8" />
+          {/* eslint-disable-next-line @next/next/no-title-in-document-head */}
           <title>ABC - Oxigênio</title>
           <meta name="author" content="RG Comunicação e Identidade" />
           <meta name="keywords" content="oxigênio, hidrogênio, gases, concentrador de oxigênio, concentrador, gases hospitalares, abc oxigenio" />
