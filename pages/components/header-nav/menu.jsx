@@ -19,7 +19,7 @@ const menuItem = [
     link: "#home"
   },
   {
-    label: "Gases hospitalares",
+    label: "Produtos",
     link: "#produtos"
   },
   {

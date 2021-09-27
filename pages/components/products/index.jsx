@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from "react";
-import { ChevronLeft, ChevronRight } from "react-feather";
 import style from "./index.module.scss"
 
 const products = [
+  { name: "Kit Oxigênio", img: "produtos/kit-oxigenio.jpg" },
   { name: "Argônio", img: "produtos/argonio.jpg" },
   { name: "Acetileno", img: "produtos/acetileno.jpg" },
-  { name: "Dióxido de Carbono", img: "produtos/dióxido-de-carbono.jpg" },
+  { name: "Dióxido de Carbono", img: "produtos/dioxido_de_carbono.jpg" },
   { name: "Hélio", img: "produtos/hélio.jpg" },
-  { name: "Hidrogênio", img: "produtos/hidrogênio.jpg" },
-  { name: "Nitrogênio", img: "produtos/nitrogênio.jpg" },
-  { name: "Oxigênio", img: "produtos/oxigênio.jpg" },
+  { name: "Hidrogênio", img: "produtos/hidrogenio.jpg" },
+  { name: "Nitrogênio", img: "produtos/nitrogenio.jpg" },
+  { name: "Oxigênio", img: "produtos/oxigenio.jpg" },
+  { name: "Canetas para solda", img: "produtos/canetasparaSOLDA.jpg" },
   { name: "Regulador Medicinal", img: "produtos/regulador.jpg" },
 ]
 
@@ -39,7 +40,7 @@ const Products = ({ phone }) => {
 
   return (
     <section className={style.container} id="produtos">
-      <h2 className={style.title}>Gases medicinais</h2>
+      <h2 className={style.title}>Produtos</h2>
       <hr className={style.divider} />
 
       <div className={style.containerList}>
