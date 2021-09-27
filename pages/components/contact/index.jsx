@@ -9,7 +9,7 @@ const Contact = ({ phone }) => {
   return (
     <section className={style.container} id="contato">
       <a className={style.button} target="_blank" rel="noopener noreferrer"
-        href={`https://api.whatsapp.com/send?phone=${phone}`}>
+        href={`https://api.whatsapp.com/send?phone=+55${phone}`}>
         <img src="logo-whats-color.svg" />
         {phone}
       </a>

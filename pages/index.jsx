@@ -4,7 +4,7 @@ import NavHeader from "./components/header-nav"
 import BannerHome from "./components/home-banner"
 import Products from "./components/products"
 
-const contactPhone = '(67) 98989-8989'
+const contactPhone = '(67) 99982-5871'
 
 export default function Home() {
   return (
