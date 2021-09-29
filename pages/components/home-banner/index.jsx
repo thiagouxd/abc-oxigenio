@@ -6,7 +6,7 @@ const HomeBanner = ({ phone }) => {
     <div className={style.banner}>
       <h1 className={style.title}>
         <span>
-          <strong>Oxigênio para sua clínica?</strong>
+          <strong>Oxigênio para sua clínica?</strong> <br />
           Entregamos em todo o estado.
         </span>
       </h1>
