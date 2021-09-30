@@ -34,6 +34,27 @@
   }
 }
 
+.buttonSecondary {
+  background-color: var(--gray-100);
+  color: var(--gray-700);
+  &:hover,
+  &:focus {
+    background-color: var(--gray-200);
+  }
+  img {
+    height: 50%;
+    margin-right: 16px;
+  }
+}
+
+.phones {
+  display: flex;
+  flex-wrap: wrap;
+  a {
+    margin: 24px;
+  }
+}
+
 .address {
   font-size: 20px;
   margin-bottom: 32px;
@@ -45,4 +66,11 @@
   &:focus {
     color: var(--gray-600);
   }
+}
+
+.socialMedias {
+  a {
+    margin: 16px;
+  }
+  margin-bottom: 24px;
 }

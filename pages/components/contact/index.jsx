@@ -8,11 +8,29 @@ const mapLink = "https://www.google.com/maps/place/ABC+Oxig%C3%AAnio/@-20.514659
 const Contact = ({ phone }) => {
   return (
     <section className={style.container} id="contato">
-      <a className={style.button} target="_blank" rel="noopener noreferrer"
-        href={`https://api.whatsapp.com/send?phone=+55${phone}`}>
-        <img src="logo-whats-color.svg" />
-        {phone}
-      </a>
+      <div className={style.phones}>
+        <a className={style.button} target="_blank" rel="noopener noreferrer"
+          href={`https://api.whatsapp.com/send?phone=+55${phone}`}>
+          <img src="logo-whats-color.svg" />
+          {phone}
+        </a>
+
+        <a className={`${style.button} ${style.buttonSecondary}`} target="_blank" rel="noopener noreferrer"
+          href={`tel:+556733937500`}>
+          <img src="phone.svg" />
+          67 3393-7500
+        </a>
+      </div>
+
+      <div className={style.socialMedias}>
+        <a target="_blank" rel="noreferrer" href="https://www.facebook.com/abcoxigenio">
+          <img src="./instagram.svg" alt="" />
+        </a>
+
+        <a target="_blank" rel="noreferrer" href="https://www.instagram.com/abcoxigenio/">
+          <img src="./facebook.svg" alt="" />
+        </a>
+      </div>
 
       <a href={mapLink} target="_blank" rel="noopener noreferrer" className={style.address}>
         Av. Guaicurus, 1097 - Jardim Itamaraca, Campo Grande / MS, 79062-292
