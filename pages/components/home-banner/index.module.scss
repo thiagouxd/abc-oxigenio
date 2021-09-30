@@ -64,9 +64,10 @@
   animation: text 1s cubic-bezier(0.7, 0.06, 0.5, 1.19);
   span {
     transform: rotate(-2deg);
+    white-space: pre-wrap;
   }
   @media screen and (max-width: 800px) {
-    font-size: 40px;
+    font-size: 32px;
     padding: 0 40px;
     width: 280px;
   }
