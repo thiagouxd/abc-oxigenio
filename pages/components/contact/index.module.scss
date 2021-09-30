@@ -50,8 +50,10 @@
 .phones {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 24px;
   a {
-    margin: 24px;
+    margin: 16px;
   }
 }
 
