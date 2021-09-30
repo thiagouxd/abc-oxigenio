@@ -9,12 +9,12 @@ export const Menu = ({ isOpen }) => (
       </li>
     )}
     <li>
-      <a className={style.link} target="_blank" rel="noreferrer" href="https://www.facebook.com/abcoxigenio">
+      <a className={style.link} target="_blank" rel="noreferrer" href="https://www.instagram.com/abcoxigenio/">
         <img src="./instagram.svg" alt="" />
       </a>
     </li>
     <li>
-      <a className={style.link} target="_blank" rel="noreferrer" href="https://www.instagram.com/abcoxigenio/">
+      <a className={style.link} target="_blank" rel="noreferrer" href="https://www.facebook.com/abcoxigenio">
         <img src="./facebook.svg" alt="" />
       </a>
     </li>
