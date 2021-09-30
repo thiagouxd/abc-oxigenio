@@ -16,7 +16,6 @@ const HomeBanner = ({ phone }) => {
   }, [])
 
   const changeBannersAuto = (element) => {
-    console.log(element.scrollLeft === element.offsetWidth)
     if (element.scrollLeft === element.offsetWidth) {
       scrollToLeftAuto(element)
     } else {
