@@ -4,7 +4,7 @@
   padding: 0;
   gap: 16px;
   margin: 0;
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 930px) {
     display: none;
   }
 }
@@ -36,6 +36,11 @@
     &::after {
       width: 80px;
     }
+  }
+  img {
+    height: 32px;
+    opacity: 0.8;
+    mix-blend-mode: multiply;
   }
 }
 

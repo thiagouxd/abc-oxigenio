@@ -8,6 +8,16 @@ export const Menu = ({ isOpen }) => (
         <a className={style.link} href={item.link}>{item.label}</a>
       </li>
     )}
+    <li>
+      <a className={style.link} target="_blank" rel="noreferrer" href="https://www.facebook.com/abcoxigenio">
+        <img src="./instagram.svg" alt="" />
+      </a>
+    </li>
+    <li>
+      <a className={style.link} target="_blank" rel="noreferrer" href="https://www.instagram.com/abcoxigenio/">
+        <img src="./facebook.svg" alt="" />
+      </a>
+    </li>
   </ul>
 )
 
