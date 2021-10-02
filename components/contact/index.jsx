@@ -23,11 +23,11 @@ const Contact = ({ phone }) => {
       </div>
 
       <div className={style.socialMedias}>
-        <a target="_blank" rel="noreferrer" href="https://www.facebook.com/abcoxigenio">
+        <a target="_blank" rel="noreferrer" href="https://www.instagram.com/abcoxigenio/">
           <img src="./instagram.svg" alt="" />
         </a>
 
-        <a target="_blank" rel="noreferrer" href="https://www.instagram.com/abcoxigenio/">
+        <a target="_blank" rel="noreferrer" href="https://www.facebook.com/abcoxigenio">
           <img src="./facebook.svg" alt="" />
         </a>
       </div>
