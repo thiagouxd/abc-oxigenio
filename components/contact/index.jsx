@@ -16,9 +16,9 @@ const Contact = ({ phone }) => {
         </a>
 
         <a className={`${style.button} ${style.buttonSecondary}`} target="_blank" rel="noopener noreferrer"
-          href={`tel:+556733937500`}>
+          href={`tel:+556733551020`}>
           <img src="phone.svg" />
-          67 3393-7500
+          67 3355-1020
         </a>
       </div>
 
