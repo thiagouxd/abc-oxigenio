@@ -9,6 +9,7 @@
 .image {
   object-fit: cover;
   min-height: 280px;
+  cursor: pointer;
   @media screen and (max-width: 800px) {
     height: 280px;
   }
